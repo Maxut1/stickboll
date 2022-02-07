@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 283747481}
   - component: {fileID: 283747480}
   - component: {fileID: 283747479}
+  - component: {fileID: 283747482}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -206,6 +207,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &283747482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283747478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06703b0fc56c4224f94ded9d8a603988, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &495001282
 GameObject:
   m_ObjectHideFlags: 0
@@ -363,6 +376,7 @@ GameObject:
   - component: {fileID: 1104709424}
   - component: {fileID: 1104709423}
   - component: {fileID: 1104709422}
+  - component: {fileID: 1104709425}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -387,8 +401,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 223.83, y: -47.74}
-  m_SizeDelta: {x: 183.65, y: 49.48}
+  m_AnchoredPosition: {x: 441.26, y: -73.87}
+  m_SizeDelta: {x: 227.13, y: 71.23}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1104709422
 MonoBehaviour:
@@ -447,7 +461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.09656461, g: 0.6470445, b: 0.6603774, a: 0.5372549}
+  m_Color: {r: 0.042452812, g: 0.9799117, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -472,6 +486,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1104709420}
   m_CullTransparentMesh: 1
+--- !u!114 &1104709425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104709420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 283747482}
+          m_TargetAssemblyTypeName: knopka, Assembly-CSharp
+          m_MethodName: StartGame
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1157942251
 GameObject:
   m_ObjectHideFlags: 0
@@ -688,8 +731,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 223.83, y: -122.17}
-  m_SizeDelta: {x: 183.65, y: 46.33}
+  m_AnchoredPosition: {x: 441.26, y: -188.13}
+  m_SizeDelta: {x: 227.14, y: 74.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1936275987
 MonoBehaviour:
@@ -748,7 +791,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.17732093, g: 0.7075472, b: 0.130162, a: 0.57254905}
+  m_Color: {r: 0.081632614, g: 1, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
